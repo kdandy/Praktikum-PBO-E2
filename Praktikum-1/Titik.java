@@ -1,71 +1,71 @@
 /*
  * Nama File : Titik.java
- * Nama      : Dandy Faishal Fahmi 24060123140136
- * Deskripsi : berisi atribut dan method dalam class Titik
+ * Nama      : Dandy Faishal Fahmi 24060123140136 LAB-E2
+ * Deskripsi : Berisi atribut dan metode dalam kelas Titik
  * Tanggal   : 21 Februari 2025
  */
 
-public class Titik {
+ public class Titik {
     /* *********ATRIBUT******** */
     double absis;
     double ordinat;
     static int counterTitik = 0;
 
     /* *********METHOD******** */
-    // konstruktor untuk membuat titik (0,0)
+    // Konstruktor default yang menginisialisasi titik di koordinat (0,0)
     Titik() {
         this(0,0);
     }
 
-    // konstruktor untuk membuat titik dengan nilai absis dan ordinat tertentu
+    // Konstruktor yang menerima parameter untuk menetapkan nilai absis dan ordinat tertentu
     Titik(double absis, double ordinat) {
         this.absis = absis;
         this.ordinat = ordinat;
         counterTitik++;
     }
 
-    // mengembalikan nilai absis
+    // Mengembalikan nilai absis titik
     double getAbsis() {
         return this.absis;
     }
 
-    // mengembalikan nilai ordinat
+    // Mengembalikan nilai ordinat titik
     double getOrdinat() {
         return this.ordinat;
     }
 
-    // mengeset absis titik dengan nilai baru x
+    // Mengubah nilai absis dengan nilai baru yang diberikan
     void setAbsis(double x) {
         this.absis = x;
     }
 
-    // mengeset ordinat titik dengan nilai baru y
+    // Mengubah nilai ordinat dengan nilai baru y
     void setOrdinat(double y) {
         this.ordinat = y;
     }
 
-    // mengembalikan nilai counterTitik
+    // Mengembalikan Nilai CounterTitik
     static int getCounterTitik() {
         return counterTitik;
     }
 
-    // menggeser nilai absis dan ordinat titik masing-masing sejauh x dan y
+    // Menggeser posisi titik sejauh nilai x dan y yang diberikan
     void geser(double x, double y) {
         this.absis += x;
         this.ordinat += y;
     }
 
-    // mencetak koordinat titik
+    // Menampilkan koordinat titik ke layar
     void printTitik() {
         System.out.println("Titik (" + absis + "," + ordinat + ")");
     }
 
-    // mengakses counter titik dengan 'this'
+    // Menampilkan jumlah objek titik menggunakan 'this'
     void printCounterTitik() {
         System.out.println(this.counterTitik);
     }
 
-    // mengembalikan nilai kuadran
+    // Menentukan kuadran tempat titik berada
     int getKuadran() {
         if (this.absis > 0 && this.ordinat > 0) {
             return 1;
@@ -80,36 +80,35 @@ public class Titik {
         }
     }
 
-    // mengembalikan jarak titik ke titik pusat (0,0)
+    // Mengembalikan jarak titik dari pusat koordinat (0,0)
     double getJarakPusat() {
         return Math.sqrt(Math.pow(this.absis,2) + Math.pow(this.ordinat,2));
     }
 
-    // mengembalikan jarak titik dengan sebuah titik lainnya
+    // Mengembalikan jarak antara titik ini dan titik lainnya yang diberikan
     double getJarak(Titik T2) {
         double dx = T2.absis - this.absis;
         double dy = T2.ordinat - this.ordinat;
         return Math.sqrt(Math.pow(dx, 2) + Math.pow(dy, 2));
     }
 
-    // melakukan refleksi terhadap sumbu X
+    // Melakukan refleksi titik terhadap sumbu X
     void refleksiX() {
         this.ordinat = -this.ordinat;
     }
 
-    // melakukan refleksi terhadap sumbu Y
+    // Melakukan refleksi titik terhadap sumbu Y
     void refleksiY() {
         this.absis = -this.absis;
     }
 
-    // mengembalikan titik baru hasil refleksi objek titik terhadap sumbu X
+    // Mengembalikan objek titik baru hasil refleksi terhadap sumbu X
     Titik getRefleksiX() {
         return new Titik(this.absis, -this.ordinat);
     }
 
-    // mengembalikan titik baru hasil refleksi objek titik terhadap sumbu Y
+    // Mengembalikan objek titik baru hasil refleksi terhadap sumbu Y
     Titik getRefleksiY() {
         return new Titik(-this.absis, this.ordinat);
     }
 }
-
