@@ -1,4 +1,4 @@
-Repository Practicum PBO Draft Diponegoro University
+Repository Practicum PBO Draft
 
 Dandy Faishal Fahmi 
 24060123140136
