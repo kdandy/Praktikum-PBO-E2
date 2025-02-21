@@ -1,7 +1,7 @@
 /*
  * Nama File : Titik.java
  * Nama      : Dandy Faishal Fahmi 24060123140136 LAB-E2
- * Deskripsi : Berisi atribut dan metode dalam kelas Titik
+ * Deskripsi : Berisi atribut dan metode dalam class Titik
  * Tanggal   : 21 Februari 2025
  */
 
