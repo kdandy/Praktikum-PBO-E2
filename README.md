@@ -15,7 +15,6 @@ This repository contains practical assignments for Object-Oriented Programming (
 
 ## Technologies Used
 - **Programming Language:** Java
-- **IDE:** IntelliJ IDEA / Eclipse / NetBeans (Choose one based on preference)
 - **Version Control:** Git
 
 ## Installation
