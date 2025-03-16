@@ -5,7 +5,7 @@
  * Tanggal   : 23 Februari 2025
  */
 
-public class Garis {
+public class Garis1 {
     // ATRIBUT //
     Titik titikAwal;
     Titik titikAkhir;
@@ -13,14 +13,14 @@ public class Garis {
   
     // METHOD //
     // Konstruktor tanpa parameter, menetapkan titik awal (0,0) dan titik akhir (1,1)
-    Garis() {
+    Garis1() {
       titikAwal = new Titik();
       titikAkhir = new Titik(1, 1);
       counterGaris++;
     }
   
     // Konstruktor dengan parameter untuk titik awal dan titik akhir
-    Garis(Titik titikAwal, Titik titikAkhir) {
+    Garis1(Titik titikAwal, Titik titikAkhir) {
       this.titikAwal = titikAwal;
       this.titikAkhir = titikAkhir;
       counterGaris++;

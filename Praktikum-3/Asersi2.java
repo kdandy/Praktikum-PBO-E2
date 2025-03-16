@@ -1,13 +1,13 @@
 /*Nama File     : Asersi2.java
- * Deskripsi    : Program untuk demo asersi, yang akan menolak input jari-jari lingkaran yang bernilai nol
+ * Deskripsi    : Program untuk demo asersi, yang akan menolak input jari-jari Lingkaran1 yang bernilai nol
  * Pembuat      : Dandy Faishal Fahmi // 24060123140136
  * Tanggal      : Kamis, 6 Maret 2025
 */
 
-//class Lingkaran
-class Lingkaran {
+//class Lingkaran1
+class Lingkaran1 {
     private double jariJari;
-    public Lingkaran(double jariJari) {
+    public Lingkaran1(double jariJari) {
         this.jariJari = jariJari;
     }
     public double hitungKeliling() {
@@ -21,9 +21,9 @@ public class Asersi2 {
     public static void main(String[] args) {
         double jariJari = 0;
         assert(jariJari>0): "jari jari tidak boleh nol!!!";
-        Lingkaran l = new Lingkaran(jariJari);
-        double kelilingLingkaran = l.hitungKeliling();
-        System.out.println("keliling Lingkaran =" + kelilingLingkaran);
+        Lingkaran1 l = new Lingkaran1(jariJari);
+        double kelilingLingkaran1 = l.hitungKeliling();
+        System.out.println("keliling Lingkaran1 =" + kelilingLingkaran1);
     }
 }
 
@@ -31,5 +31,5 @@ public class Asersi2 {
 //JAWABAN:
 
 //Kesalahan konsep dalam penggunaan asersi untuk validasi input. Jika asersi dinonaktifkan, validasi tidak berjalan. 
-//Sebaiknya gunakan exception handling (if-else + throw) untuk validasi input seperti jari-jari lingkaran yang negatif.
+//Sebaiknya gunakan exception handling (if-else + throw) untuk validasi input seperti jari-jari Lingkaran1 yang negatif.
 
