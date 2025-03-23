@@ -1,0 +1,58 @@
+classDiagram
+    class Pajak {
+        <<interface>>
+        +hitungPajak() : double
+    }
+
+    class Manusia {
+        <<abstract>>
+        -nama : String
+        -tgl_mulai_kerja : Date
+        -alamat : String
+        -pendapatan : double
+        -counterMns : int <<static>>
+        +cetakInfo() : void
+        #hitungMasaKerja() : int <<abstract>>
+        +getNama() : String
+        +setNama(nama : String) : void
+        +getTglMulaiKerja() : Date
+        +setTglMulaiKerja(tgl : Date) : void
+        +getAlamat() : String
+        +setAlamat(alamat : String) : void
+        +getPendapatan() : double
+        +setPendapatan(pendapatan : double) : void
+    }
+
+    class PNS {
+        -nip : String
+        -counterPns : int <<static>>
+        --
+        +getNip() : String
+        +setNip(nip : String) : void
+        +hitungPajak() : double
+    }
+
+    class Pengusaha {
+        -npwp : String
+        -counterPengusaha : int <<static>>
+        --
+        +getNpwp() : String
+        +setNpwp(npwp : String) : void
+        +hitungPajak() : double
+    }
+
+    class Petani {
+        -asal_daerah : String
+        -counterPetani : int <<static>>
+        --
+        +getAsalDaerah() : String
+        +setAsalDaerah(asal : String) : void
+        +hitungPajak() : double
+    }
+
+    Pajak <|.. PNS
+    Pajak <|.. Pengusaha
+    Pajak <|.. Petani
+    Manusia <|-- PNS
+    Manusia <|-- Pengusaha
+    Manusia <|-- Petani
