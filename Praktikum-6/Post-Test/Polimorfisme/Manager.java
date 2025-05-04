@@ -1,3 +1,4 @@
+package Polimorfisme;
 /*Nama File : Manager.java
  * Deskripsi : Berisi atribut dan method dalam class Manajer
  * Pembuat : Dandy Faishal Fahmi / 24060123140136

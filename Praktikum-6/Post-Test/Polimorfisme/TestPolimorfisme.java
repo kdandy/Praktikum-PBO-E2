@@ -1,3 +1,5 @@
+package Polimorfisme;
+
 /*Nama File : TestPolimorfisme.java
  * Deskripsi : Berisi program utama untuk memanggil penggunaan fungsi class Pegawai
  * Pembuat : Dandy Faishal Fahmi / 24060123140136

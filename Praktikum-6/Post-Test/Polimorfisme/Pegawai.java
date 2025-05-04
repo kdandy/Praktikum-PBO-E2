@@ -1,3 +1,4 @@
+package Polimorfisme;
 /*Nama File : Pegawai.java
  * Deskripsi : Berisi atribut dan method dalam class Pegawai
  * Pembuat : Dandy Faishal Fahmi / 24060123140136
