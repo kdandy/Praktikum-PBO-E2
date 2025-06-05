@@ -14,7 +14,7 @@ class Person implements Serializable {
 
 public class SerializePerson {
     public static void main(String[] args){
-        Person person = new Person("Panji");
+        Person person = new Person("Hanoi");
         try{
             FileOutputStream f = new FileOutputStream("person.ser");
             ObjectOutputStream s = new ObjectOutputStream(f);
